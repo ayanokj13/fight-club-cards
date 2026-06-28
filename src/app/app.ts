@@ -24,14 +24,41 @@ export class App {
   cards: BattleCard[] = [
     {
       id: 1,
-      name: 'Adharsh Pagui',
+      name: 'Adharsh',
       frontImage: 'adharsh-front.png',
+      backImage: 'card-back.png', // Assuming they all share the same back pattern
+      rotationX: 0,
+      rotationY: 0,
+      isDragging: false 
+    },
+    {
+      id: 2,
+      name: 'Aditya',
+      frontImage: 'aditya-front.png', 
       backImage: 'card-back.png',
       rotationX: 0,
       rotationY: 0,
       isDragging: false 
     },
-    // Add the other 11 friends here...
+    {
+      id: 3,
+      name: 'Jonathan',
+      frontImage: 'jonathan-front.png', 
+      backImage: 'card-back.png',
+      rotationX: 0,
+      rotationY: 0,
+      isDragging: false 
+    },
+    {
+      id: 4,
+      name: 'Saloni',
+      frontImage: 'saloni-front.png', 
+      backImage: 'card-back.png',
+      rotationX: 0,
+      rotationY: 0,
+      isDragging: false 
+    },
+    // Keep
   ];
 
   activeCard: BattleCard | null = null;
